@@ -1,0 +1,39 @@
+1531252348875	geckodriver	INFO	geckodriver 0.21.0
+1531252348885	geckodriver	INFO	Listening on 127.0.0.1:60453
+1531252349884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AMRcSVpgWoXA"
+1531252351715	Marionette	INFO	Listening on port 36077
+1531252351802	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24209, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1531252715130	geckodriver	INFO	geckodriver 0.21.0
+1531252715134	geckodriver	INFO	Listening on 127.0.0.1:45173
+1531252716138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bittzUoZ5BWx"
+1531252717660	Marionette	INFO	Listening on port 43891
+1531252717758	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24798, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1531252876605	geckodriver	INFO	geckodriver 0.21.0
+1531252876609	geckodriver	INFO	Listening on 127.0.0.1:47547
+1531252877610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MD4DVCPMPJha"
+1531252879217	Marionette	INFO	Listening on port 33647
+1531252879323	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 25216, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1531253033898	geckodriver	INFO	geckodriver 0.21.0
+1531253033901	geckodriver	INFO	Listening on 127.0.0.1:33237
+1531253034903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8WvlVpMJqKsG"
+1531253036441	Marionette	INFO	Listening on port 43539
+1531253036542	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 25568, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1531253080851	geckodriver	INFO	geckodriver 0.21.0
+1531253080854	geckodriver	INFO	Listening on 127.0.0.1:42917
+1531253081860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z67BuJsel33V"
+1531253083402	Marionette	INFO	Listening on port 36119
+1531253083468	Marionette	WARN	TLS certificate errors will be ignored for this session
+1531253155569	geckodriver	INFO	geckodriver 0.21.0
+1531253155573	geckodriver	INFO	Listening on 127.0.0.1:36675
+1531253156578	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JzBvpB5GTr8K"
+1531253158205	Marionette	INFO	Listening on port 34353
+1531253158284	Marionette	WARN	TLS certificate errors will be ignored for this session
+Warning: getUnicodeUrl failed to get a Unicode URL fromdebugger eval code, reason: TypeError: debugger eval code is not a valid URL.[Parent 27110, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 25903, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-QrvFEH/firefox-61.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
