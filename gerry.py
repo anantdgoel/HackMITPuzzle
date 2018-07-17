@@ -15,7 +15,17 @@ def district_imbalance(populations):
     imbalances = [(p-mean)**2 for p in populations]
     return sum(imbalances)
 
-def 
+def eeg(a, b):
+    expected_a = stats.norm.ppf(0.5, loc=(a*0.6)+(b*0.4), scale=math.sqrt((a*0.6*0.4)+(b*0.6*0.4)))
+    min_needed = (a+b)/2
+    expected_b = (a+b)-expected_a
+    if expected_a > expected_b:
+        wasted_a = expected_a-min_needed
+        wasted_b = expected_b
+    else:
+        wasted_a = expected_a
+        wasted_b = expected_b-min_needed
+    return (wasted_a, wasted_b)
 
 def main():
     # Read in voter data
@@ -35,16 +45,30 @@ def main():
     #         string = ''
     probs = []
     populations = []
+    wasted_votes_a = []
+    wasted_votes_b = []
     for district in districts:
         a = sum([data['party_A'][i] for i in district])
         b = sum([data['party_B'][i] for i in district])
         probs.append(prob_win(a, b))
+        wasted_a, wasted_b = eeg(a, b)
+        wasted_votes_a.append(wasted_a)
+        wasted_votes_b.append(wasted_b)
         populations.append(a+b)
-    print 'Expected value:', sum(probs)
-    print 'Populations:', populations
+    print('Expected value:', sum(probs))
+    print('Populations:', populations)
     imbalance = district_imbalance(populations)
-    print 'Imbalance:', imbalance
-    print 'Imbalance satisfied:', imbalance < 670000000000
+    print('Imbalance:', imbalance)
+    gap = (sum(wasted_votes_a)-sum(wasted_votes_b))/sum(populations)
+    print('EEG:', gap)
+    exp_b = sum(probs)>=10
+    imbalance_b = imbalance <= 670000000000
+    eeg_b = gap>=-0.173
+    print('Expected wins satisfied:', sum(probs)>=10)
+    print('Imbalance satisfied:', imbalance <= 670000000000)
+    print('EEG satisfied:', gap>=-0.173)
+    if eeg_b and imbalance_b and exp_b:
+        print("Fuck, we did it")
 
 if __name__ == '__main__':
     main()
